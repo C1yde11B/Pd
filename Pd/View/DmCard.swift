@@ -11,7 +11,7 @@ struct DmCard: View {
     var body: some View {
         ZStack {
             VStack(alignment: .leading) {
-                Text("Agummon")
+                Text("Agumon")
                     .font(.title2)
                     .fontWeight(.bold)
                     .foregroundColor(.white)
@@ -38,9 +38,9 @@ struct DmCard: View {
                 }
             }
         }
-        .background(Color.green)
+        .background(Color.black)
         .cornerRadius(12)
-        .shadow(color: .green, radius: 8, x: 0.0, y: 0.0)
+        .shadow(color: .black, radius: 8, x: 0.0, y: 0.0)
     }
 }
 #Preview {

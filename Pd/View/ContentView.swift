@@ -8,14 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    private let gridItems = [GridItem(.flexible()),GridItem(.flexible())]
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+       NavigationView {
+            ScrollView {
+               LazyVGrid(columns: gridItems, spacing: 30) {
+                    ForEach(0..<151) { _ in
+                        DmCard()
+                       
+                   }
+                }
+           }
+            .navigationTitle("DigiDex")
         }
-        .padding()
     }
 }
 
